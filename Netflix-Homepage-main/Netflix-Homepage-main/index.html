@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Netflix Logo" class="logo">
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+       
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tv_show.html">TV Shows</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="main">
+        
+        <div class="movie-card">
+            <img src="mov1.png" alt="Movie 1">
+            <div class="movie-info">
+                <h2 class="movie-title">loki</h2>
+                <p class="movie-description">Loki-The God of Mischief,sets on to an adventure filled with many deadends.</p>
+            </div>
+        </div>
+        
+        <div class="movie-card">
+            <img src="mov2.png" alt="Movie 2">
+            <div class="movie-info">
+                <h2 class="movie-title">I Am Groot</h2>
+                <p class="movie-description">Baby Groot takes centre statge in his very own collection of adventures exploring his glorious days growing up,and getting into trouble,among the stars.</p>
+            </div>
+        </div>
+        
+
+        
+    </div>
+
+    
+    </div>
+
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            
+            <div class="slide movie-slide">
+                <img src="movie1.png" alt="Movie 1">
+                <h2 class="slide-title">Jujutsu kaisen</h2>
+                
+            </div>
+            <div class="slide movie-slide">
+                <img src="movie2.png" alt="Movie 2">
+                <h2 class="slide-title">Tokyo Revengers</h2>
+                
+            </div>
+            <div class="slide movie-slide">
+                <img src="movie3.png" alt="Movie 3">
+                <h2 class="slide-title">Demon Slayer</h2>
+                
+            </div>
+            
+        </div>
+
+    <script src="slider.js"></script>
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+</html>
